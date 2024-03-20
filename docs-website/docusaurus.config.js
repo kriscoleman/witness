@@ -111,8 +111,6 @@ const config = {
       id: 'support_us',
       content:
         'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/Pcgo45TABFYvfQX47">this survey</a>',
-      textColor: 'white',
-      backgroundColor: '#333385',
       isCloseable: false,
     },
       footer: {

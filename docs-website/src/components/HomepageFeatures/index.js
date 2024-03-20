@@ -1,5 +1,7 @@
-import clsx from 'clsx';
+import { CardGrid, Grid } from '@testifysec/wings';
+
 import Heading from '@theme/Heading';
+import clsx from 'clsx';
 import styles from './styles.module.css';
 
 const FeatureList = [
@@ -35,13 +37,15 @@ const FeatureList = [
 
 function Feature({Svg, title, description}) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+    <div className="flex items-center justify-center">
+      <div className="text-center">
+        <div className="flex items-center justify-center mb-4"> 
+          <Svg className="w-56 h-56" role="img" />
+        </div>
+        <div>
+          <Heading as="h3" className="mb-2">{title}</Heading>
+          <p>{description}</p>
+        </div>
       </div>
     </div>
   );
@@ -50,13 +54,11 @@ function Feature({Svg, title, description}) {
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
-      </div>
+      <Grid className='container-x' maxColumns={3}>
+        {FeatureList.map((props, idx) => (
+          <Feature key={idx} {...props} />
+        ))}
+      </Grid>
     </section>
   );
 }

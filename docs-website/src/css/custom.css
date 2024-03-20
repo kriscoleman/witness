@@ -9,23 +9,20 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
 
 :root {
-  --ifm-font-family-base: 'DM Sans';
-  --ifm-color-primary: #ffa624;
+  /* --ifm-navbar-link-color: #C3CEF6; */
+  --ifm-color-primary: #000066;
   --ifm-color-primary-dark: #ff9a07;
   --ifm-color-primary-darker: #f79300;
   --ifm-color-primary-darkest: #cc7900;
   --ifm-color-primary-light: #ffb241;
   --ifm-color-primary-lighter: #ffb850;
   --ifm-color-primary-lightest: #ffc97b;
-  --ifm-background-color: #f8f2e4;
-  --ifm-background-surface-color: #f4ebd4;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-font-family-base: 'DM Sans';
   --ifm-color-primary: #ffa624;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -37,11 +34,11 @@
 }
 
 .navbar {
-  align-items: center;
-  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
-    0px 6px 10px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12);
-  font-family: 'DM Mono';
-  font-size: 23px;
+  display: none;
+}
+
+.footer {
+  display: none;
 }
 
 /* Zarf.dev logo size */
@@ -51,7 +48,6 @@
 }
 
 .navbar__item {
-  font-family: 'DM Sans';
   display: flex;
   /* vertical padding */
   font-size: 20px;

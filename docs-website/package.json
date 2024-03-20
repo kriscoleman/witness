@@ -16,7 +16,12 @@
   "dependencies": {
     "@docusaurus/core": "3.1.1",
     "@docusaurus/preset-classic": "3.1.1",
+    "@fontsource-variable/dm-sans": "^5.0.4",
+    "@fontsource/dm-mono": "^5.0.19",
+    "@headlessui/react": "^1.7.18",
+    "@heroicons/react": "^2.1.1",
     "@mdx-js/react": "^3.0.0",
+    "@testifysec/wings": "^0.1.0",
     "clsx": "^2.0.0",
     "docusaurus-plugin-remote-content": "^4.0.0",
     "prism-react-renderer": "^2.3.0",
