@@ -1,3 +1,5 @@
+import { CallToAction } from '@testifysec/wings';
+
 # Signing Attestations with Sigstore Keyless
 
 ><span class="tip-text">💡 Tip: If this is your first time using Witness, you might benefit from trying the [Getting Started](./getting-started.md) tutorial first! You might 
@@ -274,6 +276,9 @@ witness sign -k testkey.pem -o policy-signed.json -f policy.json
 witness verify -p policy-signed.json -a test.json -k testpub.pem -f test.txt
 ```
 
-
-### You did it! 🎉
-
+<CallToAction 
+  bgImage={{ src: "https://i.imgur.com/uU7hf1n.jpeg" }} 
+  actionImage={{ src: "https://raw.githubusercontent.com/in-toto/witness/main/docs/assets/logo.png", alt: "Witty the Witness Mascot"}} 
+  actionImageClassName="w-36" 
+  title="You did it! 🎉" 
+  />

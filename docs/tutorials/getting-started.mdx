@@ -1,3 +1,5 @@
+import { CallToAction } from '@testifysec/wings'
+
 # Getting Started
 
 ## Intro
@@ -136,5 +138,12 @@ witness verify -f testapp -a test-att.json -p policy-signed.json -k testpub.pem
 ### 9. Profit
 `witness verify` will return a `non-zero` exit and reason in the case of failure, but hopefully you should have gotten sweet sweet silence with a `0` exit status, victory! If not, try again and if that fails please [file an issue](https://github.com/in-toto/witness/issues/new/choose)!
 
-## What's Next?
-If you enjoyed this intro to Witness, you might benefit from taking things a step further by learning about [Witness Policies](./artifact-policy.md).
+### What's Next?
+<CallToAction 
+  bgImage={{ src: "https://i.imgur.com/uU7hf1n.jpeg" }} 
+  actionImage={{ src: "https://raw.githubusercontent.com/in-toto/witness/main/docs/assets/logo.png", alt: "Witty the Witness Mascot"}} 
+  actionImageClassName="w-36" 
+  title="Witness Policy" 
+  subtitle="If you enjoyed this intro to Witness, you might benefit from taking things a step further by learning about Witness Policies" 
+  primaryButton={{ label: "Let's Go!", link: "./artifact-policy"}} 
+  />

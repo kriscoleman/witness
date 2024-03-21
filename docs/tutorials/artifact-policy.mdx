@@ -1,3 +1,5 @@
+import { CallToAction } from '@testifysec/wings';
+
 # Verifying an Artifact with a Witness Policy
 
 <span class="tip-text">💡 Tip: If this is your first time using Witness, you might benefit from trying the <a href="./getting-started.md">Getting Started</a> tutorial first!</span>
@@ -303,8 +305,14 @@ witness verify -k policypublic.pem -p policy.signed.json -a build-attestation.js
 If the attestations meet the requirements specified in the policy, the witness verify command will output a message indicating that the verification succeeded along with references to the evidence. If the attestations do not meet the requirements, the witness verify command will output an error message indicating which requirement was not met.
 
 ## What's Next?
-If you enjoyed this tutorial, you might enjoy learning about how Witness can be used to sign attestations without any keys! Sound intriguing? [Let's go!](./sigstore-keyless.md)
-
+<CallToAction 
+  bgImage={{ src: "https://i.imgur.com/uU7hf1n.jpeg" }} 
+  actionImage={{ src: "https://raw.githubusercontent.com/in-toto/witness/main/docs/assets/logo.png", alt: "Witty the Witness Mascot"}} 
+  actionImageClassName="w-36" 
+  title="Keyless Signing" 
+  subtitle="If you enjoyed this tutorial, you might enjoy learning about how Witness can be used to sign attestations without any keys! Sound intriguing?" 
+  primaryButton={{ label: "Let's Go!", link: "./sigstore-keyless.md"}} 
+  />
 
 ## Did You Know?
 One of the key benefits of using Witness is that it is not only a standalone tool, but also a library that can be embedded into other applications such as admission controllers and runtime visibility tooling. Be sure to check out go-witness [here](https://github.com/in-toto/go-witness).
